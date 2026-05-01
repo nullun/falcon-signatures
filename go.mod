@@ -18,3 +18,8 @@ require (
 	github.com/google/go-querystring v1.1.0 // indirect
 	github.com/stretchr/testify v1.10.0 // indirect
 )
+
+// Local research build of falcon with the Gibbs sampler keygen path.
+// Build with `go build -tags gibbs` to activate; otherwise this is the
+// standard rejection-sampling keygen.
+replace github.com/algorand/falcon => /Users/steve/GitHub/algorand/falcon
